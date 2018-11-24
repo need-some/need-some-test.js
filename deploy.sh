@@ -17,6 +17,24 @@ elif [ "$1" != "--dry-run" ]; then
 	exit 8
 fi
 
+echo "check ci"
+npm run lint
+npm run test
+
+pubrepository="$(cat package.json | grep '"url": "' | tr -d " \t"  | cut -d '"' -f 4)"
+
+if [ ! -e target/github ]; then
+	cd target
+	git clone "$pubrepository" github
+else
+	cd target/github
+	git reset HEAD
+	git checkout .
+	git pull
+fi
+cd "$dir"
+rsync -azv --delete --exclude node_modules --exclude target --exclude coverage --exclude .git ./ target/github/
+
 if [ ! -e target/prepackage ]; then
 	mkdir target/prepackage
 fi
@@ -39,6 +57,12 @@ cp -a package.json package-lock.json README.md LICENSE target/package
 cd target/package
 if [ "$1" = --force ]; then
 	npm publish --access public
+	ver="$(cat package.json | grep version | tr -d -c "0-9.-")"
+	cd target/github
+	git add .
+	git commit -m "set version to $ver"
+	git push
+	cd "$dir"
 else
 	npm publish --dry-run
 fi
@@ -52,6 +76,7 @@ else
 	ver="$(cat package.json | grep version | tr -d -c "0-9.-")"
 	git add .
 	git commit -m "set version to $ver"
+	git push
 fi
 echo -n "new version "
 cat package.json | grep version | tr -d -c "0-9.-"
