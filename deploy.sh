@@ -46,7 +46,7 @@ cd target/prepackage
 npm run cti
 npm run build
 
-cd ../..
+cd "$dir"
 
 /bin/rm -rf target/package
 mkdir target/package
@@ -58,6 +58,7 @@ cd target/package
 if [ "$1" = --force ]; then
 	npm publish --access public
 	ver="$(cat package.json | grep version | tr -d -c "0-9.-")"
+	cd "$dir"
 	cd target/github
 	git add .
 	git commit -m "set version to $ver"
@@ -67,7 +68,7 @@ else
 	npm publish --dry-run
 fi
 
-cd ../..
+cd "$dir"
 
 if [ "$1" != --force ]; then
 	echo "dont update version in dryrun"

@@ -1,4 +1,5 @@
 # need-some-test.js
+[![Build Status](https://travis-ci.org/need-some/need-some-test.js.svg?branch=master)](https://travis-ci.org/need-some/need-some-test.js)
 
 _need-some_ is a collection of small yet useful functions.
 The test package is a unit testing extension for javascript and typescript.
