@@ -1,5 +1,8 @@
 # need-some-test.js
 [![Build Status](https://travis-ci.org/need-some/need-some-test.js.svg?branch=master)](https://travis-ci.org/need-some/need-some-test.js)
+[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
+[![npm version](https://badge.fury.io/js/%40need-some%2Ftest.svg)](https://badge.fury.io/js/%40need-some%2Ftest)
+[![need-some/test](https://img.shields.io/badge/need--some-test-ff69b4.svg)](https://www.npmjs.com/org/need-some)
 
 _need-some_ is a collection of small yet useful functions.
 The test package is a unit testing extension for javascript and typescript.
