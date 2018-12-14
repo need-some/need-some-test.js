@@ -1,6 +1,6 @@
 {
 	"name": "@need-some/test",
-	"version": "0.0.16",
+	"version": "0.0.17",
 	"description": "Need Some Testing enhancement",
 	"keywords": [
 		"unit test",
@@ -28,7 +28,7 @@
 		"karma-chrome-launcher": "^2.2.0",
 		"karma-coverage-istanbul-reporter": "^2.0.4",
 		"karma-jasmine": "^2.0.1",
-		"karma-jasmine-html-reporter": "^1.3.1",
+		"karma-jasmine-html-reporter": "^1.4.0",
 		"karma-typescript": "^3.0.13",
 		"prettier": "^1.14.3",
 		"tslint": "^5.11.0",
@@ -38,7 +38,7 @@
 	"dependencies": {
 		"@types/jasmine": "^3.3.0",
 		"@types/json-stable-stringify": "^1.0.32",
-		"jasmine-core": "^3.2.1",
+		"jasmine-core": "^3.3.0",
 		"json-stable-stringify": "^1.0.1"
 	},
 	"prettier": {
