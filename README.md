@@ -1,6 +1,6 @@
 # need-some-test.js
 [![Build Status](https://travis-ci.org/need-some/need-some-test.js.svg?branch=master)](https://travis-ci.org/need-some/need-some-test.js)
-[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![npm version](https://badge.fury.io/js/%40need-some%2Ftest.svg)](https://badge.fury.io/js/%40need-some%2Ftest)
 [![need-some/test](https://img.shields.io/badge/need--some-test-ff69b4.svg)](https://www.npmjs.com/org/need-some)
 [![Dependencies](https://david-dm.org/need-some/need-some-test.js/status.svg)](https://david-dm.org/need-some/need-some-test.js)

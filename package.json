@@ -1,6 +1,6 @@
 {
 	"name": "@need-some/test",
-	"version": "0.0.19",
+	"version": "0.1.0",
 	"description": "Need Some Testing enhancement",
 	"keywords": [
 		"unit test",
@@ -24,12 +24,12 @@
 	},
 	"devDependencies": {
 		"create-ts-index": "^1.8.0",
-		"karma": "^4.1.0",
+		"karma": "^5.0.1",
 		"karma-chrome-launcher": "^2.2.0",
 		"karma-coverage-istanbul-reporter": "^2.0.5",
 		"karma-jasmine": "^2.0.1",
 		"karma-jasmine-html-reporter": "^1.4.2",
-		"karma-typescript": "^4.1.0",
+		"karma-typescript": "^5.0.2",
 		"prettier": "^1.18.2",
 		"tslint": "^5.17.0",
 		"tslint-config-prettier": "^1.18.0",
