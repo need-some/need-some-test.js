@@ -1,6 +1,6 @@
 {
 	"name": "@need-some/test",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Need Some Testing enhancement",
 	"keywords": [
 		"unit test",
@@ -23,7 +23,7 @@
 		"url": "git@github.com:need-some/need-some-test.js.git"
 	},
 	"devDependencies": {
-		"create-ts-index": "^1.8.0",
+		"create-ts-index": "^1.13.6",
 		"karma": "^5.0.1",
 		"karma-chrome-launcher": "^2.2.0",
 		"karma-coverage-istanbul-reporter": "^2.0.5",
